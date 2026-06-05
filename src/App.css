@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #08142b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 30px;
+
+  border-bottom: 1px solid #233453;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.navbar button {
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #635bff;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.navbar button:hover {
+  opacity: 0.9;
+}
+
+/* Board */
+
+.board {
+  display: flex;
+
+  gap: 20px;
+
+  padding: 20px;
+
+  flex-wrap: wrap;
+}
+
+/* Column */
+
+.column {
+  width: 280px;
+
+  min-height: 350px;
+
+  background: #13213f;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.column-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.task-count {
+  background: #24385f;
+
+  padding: 4px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+}
+
+/* Tasks */
+
+.tasks-container {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.empty-text {
+  color: #a9b4ce;
+
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+.task-card {
+  background: #1c2e4f;
+
+  border: 1px solid #304b77;
+
+  border-radius: 8px;
+
+  padding: 12px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Add Task */
+
+.task-btn {
+  margin-top: 15px;
+
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #635bff;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.task-btn:hover {
+  opacity: 0.9;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete-column-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-column-btn:hover {
+  transform: scale(1.1);
+}
+
+.task-count {
+  background: #24385f;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
